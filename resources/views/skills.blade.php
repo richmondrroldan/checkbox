@@ -10,7 +10,7 @@
 				   
 				   	@foreach($skills as $skill)
 				    
-				    {{ Form::checkbox('skills[]', '$skill->title', 'old($skill->title)') }}
+				    {{ Form::checkbox('skills[]', '$skill->title') }}
 				    {{ Form::label($skill->title) }}
 				    <br>
 				    @endforeach
